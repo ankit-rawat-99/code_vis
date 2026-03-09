@@ -1,0 +1,37 @@
+.dp-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.dp-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dp-cell {
+  background: #4da6ff;
+  margin: 0 8px;
+  padding: 20px;
+  border-radius: 6px;
+  color: white;
+  position: relative;
+  min-width: 60px;
+  transition: all 0.3s ease;
+}
+
+.dp-cell.highlight {
+  background: orange;
+}
+
+.dp-index {
+  position: absolute;
+  bottom: -20px;
+  font-size: 12px;
+  color: #333;
+}
+
+.formula-text {
+  margin-top: 20px;
+  font-weight: bold;
+}

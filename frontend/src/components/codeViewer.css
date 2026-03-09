@@ -1,0 +1,20 @@
+.code-container {
+  width: 45%;
+  background: #1e1e1e;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.code-block {
+  white-space: pre-wrap;
+  font-family: monospace;
+  font-size: 14px;
+}

@@ -1,0 +1,29 @@
+.lcs-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.lcs-grid {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.lcs-row {
+  display: flex;
+}
+
+.lcs-cell {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.lcs-cell.highlight {
+  background-color: purple;
+  color: white;
+}

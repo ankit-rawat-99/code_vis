@@ -1,0 +1,39 @@
+.search-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.search-array {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-item {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #4da6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.search-item.current {
+  background-color: orange;
+}
+
+.search-item.mid {
+  background-color: purple;
+  color: white;
+}
+
+.search-item.range {
+  border-color: green;
+}
+
+.search-item.found {
+  background-color: green;
+  color: white;
+}

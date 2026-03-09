@@ -1,0 +1,21 @@
+.dijkstra-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.distance-table {
+  margin: auto;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.distance-table th,
+.distance-table td {
+  border: 1px solid #999;
+  padding: 10px 20px;
+}
+
+.active-row {
+  background-color: orange;
+  color: white;
+}

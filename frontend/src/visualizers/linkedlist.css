@@ -1,0 +1,54 @@
+.ll-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.ll-controls {
+  margin-bottom: 20px;
+}
+
+.ll-controls input {
+  padding: 8px;
+  width: 80px;
+  margin-right: 10px;
+}
+
+.ll-controls button {
+  padding: 8px 10px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.ll-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.ll-node-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.ll-node {
+  background: #4da6ff;
+  padding: 15px 20px;
+  border-radius: 6px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.ll-node.highlight {
+  background: orange;
+}
+
+.ll-arrow {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.ll-null {
+  margin-left: 15px;
+  font-weight: bold;
+}

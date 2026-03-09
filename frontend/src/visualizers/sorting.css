@@ -1,0 +1,32 @@
+.sorting-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 300px;
+  margin-top: 40px;
+}
+
+.bar {
+  width: 40px;
+  margin: 0 5px;
+  background: #4da6ff;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.bar-value {
+  color: white;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.compare {
+  background: orange !important;
+}
+
+.swap {
+  background: red !important;
+}
