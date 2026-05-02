@@ -1,216 +1,105 @@
-🚀 codeVisualizer
-codeVisualizer is an interactive web application that helps users understand algorithms and data structures through real-time visualization, code examples, and AI-powered explanations.
-The main idea behind this project is simple — instead of just reading code, you can actually see how algorithms work step by step.
+🚀 CodeVisualizer
+<p align="center"> <b>Understand Algorithms the Visual Way</b><br> Interactive • Step-by-step • AI Assisted </p>
+🌟 Overview
 
-📌 Features
+CodeVisualizer is an interactive platform that helps you actually understand algorithms instead of just reading them.
 
+You can visualize how algorithms work step-by-step, view code in multiple languages, and even get explanations using an AI chatbot.
 
-🔢 Sorting Visualizer
-
-
-Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort
-
-
-
-
+✨ Features
+🔢 Algorithms Supported
+Sorting → Bubble, Selection, Insertion, Merge, Quick
+Searching → Linear, Binary, Jump
+Graph → BFS, DFS, Dijkstra
+Tree → Inorder, Preorder, Postorder
+Dynamic Programming → Fibonacci, Knapsack, LCS
 📦 Data Structures
-
-
-Stack, Queue, Array, Linked List
-
-
-
-
-🌳 Tree Visualizer
-
-
-Inorder, Preorder, Postorder traversal
-
-
-
-
-🌐 Graph Algorithms
-
-
-BFS, DFS, Dijkstra
-
-
-
-
-🧠 Dynamic Programming
-
-
-Fibonacci, Knapsack, Longest Common Subsequence
-
-
-
-
-⚡ Step-by-step Animation
-
-
-Play, Pause, Next, Previous
-
-
-Speed control
-
-
-
-
+Stack
+Queue
+Array
+Linked List
+⚡ Visualization Controls
+▶️ Play / Pause
+⏭️ Next / Previous Step
+⏱️ Speed Control
 💻 Code Viewer
-
-
-View algorithms in:
-
-
+View code in:
 C++
-
-
 Java
-
-
 Python
-
-
-
-
-
-
-🤖 AI Chatbot (Gemini API)
-
-
-Explain any algorithm
-
-
-Helps in understanding concepts quickly
-
-
-
-
-
+🤖 AI Chatbot
+Explain algorithms
+Beginner-friendly explanations
+Works in real-time
 🛠️ Tech Stack
-Frontend:
+Layer	Technology
+Frontend	React.js
+Backend	Node.js, Express.js
+API	Gemini AI
+Visualization	Custom State Rendering
+📁 Project Structure
+CodeVisualizer/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── visualizers/
+│   │   ├── components/
+│   │   ├── data/
+│   │   └── App.jsx
+│
+├── backend/
+│   ├── engine/
+│   │   ├── sorting.js
+│   │   ├── graph.js
+│   │   ├── dp.js
+│   │   ├── tree.js
+│   │   └── searching.js
+│   └── server.js
+⚙️ Setup Instructions
+1️⃣ Clone Repository
+git clone https://github.com/your-username/CodeVisualizer.git
+cd CodeVisualizer
+2️⃣ Install Dependencies
+cd backend
+npm install
 
+cd ../frontend
+npm install
+3️⃣ Run Project
+# backend
+cd backend
+node server.js
 
-React.js
-
-
-Axios
-
-
-Backend:
-
-
-Node.js
-
-
-Express.js
-
-
-Other Tools:
-
-
-Mermaid (for diagrams)
-
-
-Gemini API (AI chatbot)
-
-
-
-🧩 Project Structure
-visualalgo-pro/│├── frontend/│   ├── src/│   │   ├── visualizers/│   │   ├── components/│   │   ├── data/│   │   └── App.jsx│├── backend/│   ├── engine/│   │   ├── sorting.js│   │   ├── graph.js│   │   ├── dp.js│   │   ├── tree.js│   │   └── ...│   └── server.js
-
-⚙️ Installation & Setup
-1. Clone the repository
-git clone https://github.com/your-username/visualalgo-pro.gitcd visualalgo-pro
-
-2. Install dependencies
-# Backendcd backendnpm install# Frontendcd ../frontendnpm install
-
-3. Run the project
-# Start backendcd backendnode server.js# Start frontendcd frontendnpm run dev
-
-4. Open in browser
+# frontend
+cd frontend
+npm run dev
+🌐 Open in Browser
 http://localhost:5173
+🧠 How It Works
+User → Select Algorithm → Run → Backend Processes → States Generated → Visualization → Controls → Chatbot Explanation
+🎯 Project Goal
+
+The goal of CodeVisualizer is to make learning algorithms easier and more interactive.
+
+Instead of memorizing code, users can see how algorithms work internally, which helps in better understanding and problem-solving.
 
 📸 Screenshots
 
-Add screenshots of:
-
-
-
-Sorting visualization
-
-
-Graph visualization
-
-
-Code viewer
-
-
-Chatbot
-
-
-
-🧠 How It Works
-
-
-User selects an algorithm
-
-
-Frontend sends request to backend (/run)
-
-
-Backend executes algorithm and generates states
-
-
-States are sent back and visualized step-by-step
-
-
-User can control execution
-
-
-Chatbot (/chat) provides explanation
-
-
-
-🎯 Goal of the Project
-The goal of this project is to make learning algorithms easier and more interactive.
-Instead of just reading theory, users can actually see how things work internally, which helps in better understanding.
+Add your project screenshots here
 
 🚀 Future Improvements
-
-
-Add more algorithms (Greedy, Backtracking, etc.)
-
-
-User authentication & progress tracking
-
-
+More algorithms (Greedy, Backtracking)
+User login & progress tracking
 Mobile version
-
-
-More advanced AI explanations
-
-
-Practice questions & quizzes
-
-
-
+Practice problems
+Advanced AI tutor mode
 🤝 Contributing
-Contributions are welcome!
-If you want to improve something or add a feature, feel free to fork and submit a PR.
 
-📜 License
-This project is for educational purposes.
+If you want to improve this project, feel free to fork and submit a pull request.
 
 👨‍💻 Author
+
 Ankit Rawat
 
-
 GitHub: https://github.com/ankit-rawat-99
-
-
 LinkedIn: https://www.linkedin.com/in/ankit-rawat-0619aa293/
-
-
-
