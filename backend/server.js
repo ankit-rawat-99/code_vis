@@ -10,7 +10,7 @@ const dp = require("./engine/dp");
 const graph = require("./engine/graph");
 const tree = require("./engine/tree");
 
-const apiKey = process.env.GEMINI_API_KEY || "AIzaSyCitg3UO6Wno6H3bNNCztZfJZ53pggrCns";
+const apiKey =
 let genAI = null;
 let model = null;
 
