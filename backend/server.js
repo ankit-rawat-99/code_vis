@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 const stack = require("./engine/stack");
 const queue = require("./engine/queue");
 const array = require("./engine/array");
@@ -9,6 +10,16 @@ const dp = require("./engine/dp");
 const graph = require("./engine/graph");
 const tree = require("./engine/tree");
 
+const apiKey = process.env.GEMINI_API_KEY || "AIzaSyCitg3UO6Wno6H3bNNCztZfJZ53pggrCns";
+let genAI = null;
+let model = null;
+
+if (apiKey) {
+  genAI = new GoogleGenerativeAI(apiKey);
+  model = genAI.getGenerativeModel({ model: "models/gemini-2.5-flash" });
+} else {
+  console.warn("Warning: No Gemini API key configured. Set GEMINI_API_KEY or GOOGLE_API_KEY.");
+}
 
 const app = express();
 app.use(cors());
@@ -45,6 +56,36 @@ app.post("/run", (req, res) => {
 
   const states = engines[type](input);
   res.json({ states });
+});
+
+app.post("/chat", async (req, res) => {
+  const { message } = req.body;
+  if (!message || !message.trim()) {
+    return res.status(400).json({ error: "Message is required" });
+  }
+
+  if (!apiKey) {
+    return res.status(500).json({ error: "Gemini API key is not configured" });
+  }
+
+  try {
+    const chat = model.startChat({
+      history: [
+        {
+          role: "user",
+          parts: [{ text: "You are a helpful assistant chatbot." }],
+        },
+      ],
+    });
+
+    const result = await chat.sendMessage(message);
+    const reply = result.response ? result.response.text() : "Sorry, I could not get a reply.";
+
+    res.json({ reply });
+  } catch (err) {
+    console.error("Gemini chat error:", err);
+    res.status(500).json({ error: "Chatbot service failed" });
+  }
 });
 
 app.listen(5000, () => console.log("Server running on port 5000"));
